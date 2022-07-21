@@ -1,12 +1,18 @@
+using BepInEx;
 using BerryLoaderNS;
 
 namespace YourMod
 {
-	class Main : BerryLoaderMod
+	[BepInPlugin("EpicExampleModId", "Epic Example Mod", "0.0.1")]
+	[BepInDependency("BerryLoader")]
+	class Plugin : BaseUnityPlugin
 	{
-		public override void Init()
+		public static BepInEx.Logging.ManualLogSource L;
+
+		private void Awake()
 		{
-			BerryLoader.L.LogInfo("hello from YourMod.Main.Init");
+			L = Logger;
+			L.LogInfo("hello from YourMod.Plugin.Awake");
 		}
 	}
 }

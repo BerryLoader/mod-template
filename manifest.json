@@ -1,9 +1,0 @@
-{
-	"id": "ModTemplate",
-	"name": "Mod Template",
-	"repo": "YourName/YourRepo",
-	"version": "0.0.1",
-	"developer": "YourName",
-	"description": "Mod template",
-	"dependencies": {}
-}
